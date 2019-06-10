@@ -16,10 +16,6 @@ $baseControllersPath = 'App\Api\v1\Controllers\\';
 
 $api->version('v1', function (\Dingo\Api\Routing\Router $api) use ($baseControllersPath) {
 
-    $api->post('todo', $baseControllersPath . 'TodoController@store');
-
-    $api->get('todo', $baseControllersPath . 'TodoControllers@show');
-
-    $api->get('todo', $baseControllersPath . 'TodoControllers@index');
+    $api->resource('todos', $baseControllersPath . 'TodoController', ['only' => ['index', 'store', 'show', 'update']]);
 
 });
