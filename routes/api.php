@@ -1,6 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
+$api                 = app('Dingo\Api\Routing\Router');
+$baseControllersPath = 'App\Api\v1\Controllers\\';
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+$api->version('v1', function (\Dingo\Api\Routing\Router $api) use ($baseControllersPath) {
+
+    $api->post('todo', $baseControllersPath . 'TodoController@store');
+
+    $api->get('todo', $baseControllersPath . 'TodoControllers@show');
+
+    $api->get('todo', $baseControllersPath . 'TodoControllers@index');
+
 });
