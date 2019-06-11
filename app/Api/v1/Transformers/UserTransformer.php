@@ -10,6 +10,6 @@ class UserTransformer extends TransformerAbstract {
     use UserDetailTrait;
 
     public function transform(User $user) {
-        $this->getAttributes($user);
+        return $this->getAttributes($user);
     }
 }
