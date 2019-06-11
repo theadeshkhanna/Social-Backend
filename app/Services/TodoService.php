@@ -9,8 +9,8 @@ use App\Todo;
 
 class TodoService {
 
-    public function index() {
-        return Todo::all();
+    public function index($id) {
+        return Todo::query()->whereUserId($id)->get();
     }
 
     public function find($id) {

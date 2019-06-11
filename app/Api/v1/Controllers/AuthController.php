@@ -3,7 +3,6 @@
 namespace App\Api\v1\Controllers;
 
 use App\Api\v1\Exceptions\InvalidCredentialsException;
-use App\Api\v1\Exceptions\UserEmailNotVerifiedException;
 use App\Api\v1\Requests\CreateUserRequest;
 use App\Api\v1\Requests\Request;
 use App\Api\v1\Transformers\UserTransformer;
@@ -64,5 +63,9 @@ class AuthController extends BaseController {
         return [
             'user' => $transformedUser
         ];
+    }
+
+    public function logout() {
+        JWTAuth::invalidate(JWTAuth::getToken());
     }
 }

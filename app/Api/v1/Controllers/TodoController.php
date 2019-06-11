@@ -6,6 +6,8 @@ use App\Api\v1\Requests\CreateTodoRequest;
 use App\Api\v1\Requests\UpdateTodoRequest;
 use App\Api\v1\Transformers\TodoTransformer;
 use App\Services\TodoService;
+use Illuminate\Support\Facades\Auth;
+
 
 class TodoController extends BaseController {
      protected $todoService;
@@ -15,7 +17,7 @@ class TodoController extends BaseController {
      }
 
      public function index() {
-         return $this->response->collection($this->todoService->index(), new TodoTransformer());
+         return $this->response->collection($this->todoService->index(Auth::id()), new TodoTransformer());
      }
 
      public function show($id) {
