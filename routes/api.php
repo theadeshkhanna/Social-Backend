@@ -16,6 +16,10 @@ $baseControllersPath = 'App\Api\v1\Controllers\\';
 
 $api->version('v1', function (\Dingo\Api\Routing\Router $api) use ($baseControllersPath) {
 
-    $api->resource('todos', $baseControllersPath . 'TodoController', ['only' => ['index', 'store', 'show', 'update']]);
+    $api->resource('todos', $baseControllersPath . 'TodoController', ['only' => ['index', 'store', 'show', 'update', 'destroy']]);
+
+    $api->post('register', $baseControllersPath . 'AuthController@register');
+
+    $api->get('login', $baseControllersPath . 'AuthController@login');
 
 });

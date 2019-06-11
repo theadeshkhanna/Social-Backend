@@ -33,7 +33,9 @@ class TodoController extends BaseController {
         return $this->response->item($todo, new TodoTransformer());
     }
 
-    public function destroy() {
+    public function destroy($id) {
+         $todo = $this->todoService->find($id);
 
+         $todo->delete();
     }
 }
