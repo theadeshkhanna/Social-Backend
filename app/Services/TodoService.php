@@ -23,12 +23,12 @@ class TodoService {
         return $todo;
     }
 
-    public function store(CreateTodoContract $contract) {
+    public function store(CreateTodoContract $contract, $id) {
         $todo = new Todo;
 
         $todo->title = $contract->getTitle();
         $todo->description = $contract->getDescription();
-        $todo->user_id = $contract->getUserid();
+        $todo->user_id = $id;
 
         $todo->save();
         return $todo;

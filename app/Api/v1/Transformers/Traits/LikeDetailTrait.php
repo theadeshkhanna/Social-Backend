@@ -9,7 +9,7 @@ trait LikeDetailTrait {
     public function getAttributes (Like $like) {
         return [
             'id'  => (int)$like->id,
-            'user_id' => $like->user_id,
+            'likedByUser_id' => $like->likedByUser_id,
             'todo_id' => $like->todo_id
         ];
     }

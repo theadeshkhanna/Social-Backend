@@ -14,8 +14,12 @@ class LikeController extends BaseController {
         $this->likeService = new LikeService();
     }
 
-    public function toLike(CreateLikeRequest $request) {
+    public function store(CreateLikeRequest $request) {
         $like = $this->likeService->like($request, Auth::id());
         return $this->response->item($like, new LikeTransformer());
+    }
+
+    public function destroy($id) {
+        $this->likeService->deleteLike($id);
     }
 }

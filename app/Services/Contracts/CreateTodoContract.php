@@ -6,6 +6,5 @@ interface CreateTodoContract {
 
     public function getTitle();
     public function getDescription();
-    public function getUserid();
 
 }

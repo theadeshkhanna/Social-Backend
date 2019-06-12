@@ -26,7 +26,7 @@ class TodoController extends BaseController {
      }
 
     public function store(CreateTodoRequest $request) {
-        $todo = $this->todoService->store($request);
+        $todo = $this->todoService->store($request, Auth::id());
         return $this->response->item($todo, new TodoTransformer());
     }
 

@@ -18,7 +18,7 @@ class LikeService {
 
         $todo = $this->todoService->find($contract->getTodoId());
 
-        $like->user_id = $id;
+        $like->likedByUser_id = $id;
         $like->todo_id = $contract->getTodoId();
 
         $todo->likes++;
@@ -27,5 +27,11 @@ class LikeService {
         $like->save();
 
         return $like;
+    }
+
+    public function deleteLike($id) {
+        $like = Like::find($id);
+
+        $like->delete();
     }
 }

@@ -12,7 +12,7 @@ trait TodoDetailTrait {
            'title' => $todo->title,
            'description' => $todo->description,
            'user_id'  =>$todo->user_id,
-           'likes'    => $todo->likes
+           'likes'    => (int)$todo->likes
        ];
     }
 }

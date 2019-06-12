@@ -28,6 +28,6 @@ $api->version('v1', ['middleware' => ['jwt.auth']], function (\Dingo\Api\Routing
 
     $api->resource('todos', $baseControllersPath . 'TodoController', ['only' => ['index', 'store', 'show', 'update', 'destroy']]);
 
-    $api->post('like', $baseControllersPath . 'LikeController@toLike');
+    $api->resource('like', $baseControllersPath . 'LikeController', ['only' => ['store', 'destroy']]);
 
 });
