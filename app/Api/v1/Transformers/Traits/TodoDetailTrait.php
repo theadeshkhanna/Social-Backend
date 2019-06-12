@@ -11,7 +11,8 @@ trait TodoDetailTrait {
            'id'   => (int)$todo->id,
            'title' => $todo->title,
            'description' => $todo->description,
-           'user_id'  =>$todo->user_id
+           'user_id'  =>$todo->user_id,
+           'likes'    => $todo->likes
        ];
     }
 }
