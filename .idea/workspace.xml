@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b6fd8d0-82ba-4668-8baf-f49dd2db43c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Api/v1/Controllers/LikeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Api/v1/Requests/CreateLikeRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Api/v1/Transformers/LikeTransformer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Api/v1/Transformers/Traits/LikeDetailTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Like.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Contracts/CreateLikeContract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/LikeService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Api/v1/Transformers/Traits/TodoDetailTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Api/v1/Transformers/Traits/TodoDetailTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Api/v1/Controllers/LikeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Api/v1/Controllers/LikeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Api/v1/Requests/CreateLikeRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Api/v1/Requests/CreateLikeRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Contracts/CreateLikeContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Contracts/CreateLikeContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/LikeService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/LikeService.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Api/v1/Controllers/LikeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+            <state relative-caret-position="300">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
               <folding>
                 <element signature="e#42#84#0#PHP" expanded="true" />
               </folding>
@@ -63,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Services/LikeService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="450">
+              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding>
                 <element signature="e#31#44#0#PHP" expanded="true" />
               </folding>
@@ -75,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Api/v1/Requests/CreateLikeRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="300">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -93,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Services/Contracts/CreateLikeContract.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -150,13 +145,13 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_06_12_081805_create_likes_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_12_082201_create_comments_table.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Services/Contracts/CreateLikeContract.php" />
-        <option value="$PROJECT_DIR$/app/Api/v1/Requests/CreateLikeRequest.php" />
         <option value="$PROJECT_DIR$/app/Like.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_12_083134_add_likes_column_to_todos_table.php" />
         <option value="$PROJECT_DIR$/app/Api/v1/Transformers/Traits/TodoDetailTrait.php" />
         <option value="$PROJECT_DIR$/app/Api/v1/Transformers/LikeTransformer.php" />
         <option value="$PROJECT_DIR$/app/Api/v1/Transformers/Traits/LikeDetailTrait.php" />
+        <option value="$PROJECT_DIR$/app/Api/v1/Requests/CreateLikeRequest.php" />
+        <option value="$PROJECT_DIR$/app/Services/Contracts/CreateLikeContract.php" />
         <option value="$PROJECT_DIR$/app/Api/v1/Controllers/LikeController.php" />
         <option value="$PROJECT_DIR$/app/Services/LikeService.php" />
       </list>
@@ -393,12 +388,12 @@
       <workItem from="1560280604568" duration="190000" />
       <workItem from="1560280869827" duration="69000" />
       <workItem from="1560280953666" duration="25000" />
-      <workItem from="1560327320348" duration="3200000" />
+      <workItem from="1560327320348" duration="3765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23570000" />
+    <option name="totallyTimeSpent" value="24135000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,9 +406,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29076838" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29076838" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -426,7 +420,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32925585" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.25891948" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.25891948" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -710,13 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/Contracts/CreateLikeContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Todo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -755,16 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Api/v1/Controllers/LikeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="55" lean-forward="true" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding>
-            <element signature="e#42#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Api/v1/Transformers/LikeTransformer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -782,20 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Api/v1/Requests/CreateLikeRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/TodoService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -806,10 +769,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/Contracts/CreateLikeContract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Api/v1/Requests/CreateLikeRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Api/v1/Controllers/LikeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="e#42#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/LikeService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="450">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding>
             <element signature="e#31#44#0#PHP" expanded="true" />
           </folding>

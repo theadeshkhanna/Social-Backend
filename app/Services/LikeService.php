@@ -13,12 +13,12 @@ class LikeService {
         $this->todoService = new TodoService();
     }
 
-    public function like(CreateLikeContract $contract) {
+    public function like(CreateLikeContract $contract, $id) {
         $like = new Like();
 
         $todo = $this->todoService->find($contract->getTodoId());
 
-        $like->user_id = $contract->getUserId();
+        $like->user_id = $id;
         $like->todo_id = $contract->getTodoId();
 
         $todo->likes++;
