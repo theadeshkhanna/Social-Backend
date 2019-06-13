@@ -30,4 +30,6 @@ $api->version('v1', ['middleware' => ['jwt.auth']], function (\Dingo\Api\Routing
 
     $api->resource('like', $baseControllersPath . 'LikeController', ['only' =>['store', 'destroy']]);
 
+    $api->resource('comment', $baseControllersPath . 'LikeController', ['only' =>['store', 'destroy']]);
+
 });
