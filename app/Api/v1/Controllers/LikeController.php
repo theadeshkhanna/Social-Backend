@@ -20,6 +20,6 @@ class LikeController extends BaseController {
     }
 
     public function destroy($id) {
-        $this->likeService->deleteLike($id);
+        $this->likeService->deleteLike( Auth::id(), $id);
     }
 }
