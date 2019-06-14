@@ -9,7 +9,7 @@ use League\Fractal\TransformerAbstract;
 class CommentTransformer extends TransformerAbstract {
     use CommentDetailTrait;
 
-    public function tranform(Comment $comment) {
+    public function transform(Comment $comment) {
         return $this->getAttributes($comment);
     }
 }
