@@ -5,7 +5,6 @@ namespace App\Sevices;
 use App\Like;
 use App\Services\Contracts\CreateLikeContract;
 use App\Services\TodoService;
-use app\Todo;
 
 class LikeService {
     protected $todoService;

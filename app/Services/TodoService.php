@@ -8,6 +8,7 @@ use App\Like;
 use App\services\contracts\CreateTodoContract;
 use App\Services\Contracts\UpdateTodoContract;
 use App\Todo;
+use Illuminate\Support\Facades\DB;
 
 class TodoService {
 
@@ -52,6 +53,11 @@ class TodoService {
     }
 
     public function fetchLikedTodo($id) {
+        $data = DB::table('todos')->join('likes', 'todos.id', '=','likes.todo_id')
+                ->whereNotNull('likes.todo_id')
+                ->whereUserId($id)->get();
+
+        dd($data);
 
     }
 

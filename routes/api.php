@@ -32,8 +32,8 @@ $api->version('v1', ['middleware' => ['jwt.auth']], function (\Dingo\Api\Routing
 
     $api->resource('comment', $baseControllersPath . 'CommentController', ['only' =>['store', 'destroy']]);
 
-    $api->get('todos/like', $baseControllersPath . 'TodoController@getLikedTodos');
+    $api->get('todo/like', $baseControllersPath . 'TodoController@getLikedTodos');
 
-    $api->get('todos/like', $baseControllersPath . 'TodoController@getCommentedTodos');
+    $api->get('todo/comment', $baseControllersPath . 'TodoController@getCommentedTodos');
 
 });
