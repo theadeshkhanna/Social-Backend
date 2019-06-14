@@ -40,4 +40,12 @@ class TodoController extends BaseController {
 
          $todo->delete();
     }
+
+    public function getLikedTodos() {
+         return $this->response->collection($this->todoService->fetchLikedTodo(Auth::id()), new TodoTransformer());
+    }
+
+    public function getCommentedTodos() {
+        return $this->response->collection($this->todoService->fetchCommentedTodo(Auth::id()), new TodoTransformer());
+    }
 }

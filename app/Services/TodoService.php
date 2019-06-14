@@ -2,7 +2,9 @@
 
 namespace App\Services;
 
+use App\Api\v1\Exceptions\NoLikedTodoException;
 use App\Api\v1\Exceptions\TodoNotFoundException;
+use App\Like;
 use App\services\contracts\CreateTodoContract;
 use App\Services\Contracts\UpdateTodoContract;
 use App\Todo;
@@ -47,5 +49,13 @@ class TodoService {
 
         $todo->save();
         return $todo;
+    }
+
+    public function fetchLikedTodo($id) {
+
+    }
+
+    public function fetchCommentedTodo() {
+
     }
 }
