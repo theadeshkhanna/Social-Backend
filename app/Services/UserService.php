@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Like;
 use App\Services\Contracts\CreateUserContract;
 use App\User;
 use Illuminate\Support\Facades\Hash;
@@ -17,5 +18,10 @@ class UserService {
 
         $user->save();
         return $user;
+    }
+
+    public function fetchActivity($id) {
+        $like = Like::where('likedByUser_id', $id);
+        $comment = Comment::where('');
     }
 }

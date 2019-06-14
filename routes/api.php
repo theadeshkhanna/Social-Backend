@@ -36,4 +36,6 @@ $api->version('v1', ['middleware' => ['jwt.auth']], function (\Dingo\Api\Routing
 
     $api->get('todo/comment', $baseControllersPath . 'TodoController@getCommentedTodos');
 
+    $api->get('activity', $baseControllersPath . 'UserController@getActivity');
+
 });

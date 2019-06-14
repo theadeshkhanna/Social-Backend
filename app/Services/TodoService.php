@@ -53,15 +53,19 @@ class TodoService {
     }
 
     public function fetchLikedTodo($id) {
-        $data = DB::table('todos')->join('likes', 'todos.id', '=','likes.todo_id')
-                ->whereNotNull('likes.todo_id')
-                ->whereUserId($id)->get();
+        $data = Todo::join('likes', 'todos.id', '=','likes.todo_id')
+                 ->whereNotNull('likes.todo_id')
+                ->whereUserId($id)->get('todos.*');
 
-        dd($data);
+        return $data;
 
     }
 
-    public function fetchCommentedTodo() {
+    public function fetchCommentedTodo($id) {
+        $data = Todo::join('comments', 'todos.id', '=','comments.todo_id')
+            ->whereNotNull('comments.todo_id')
+            ->whereUserId($id)->get('todos.*');
 
+        return $data;
     }
 }
