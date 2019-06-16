@@ -13,7 +13,6 @@ class UserController extends BaseController {
     }
 
     public function getActivity() {
-        $activity = $this->userService->fetchActivity(Auth::user());
-        return $this->response->collection($activity, new ActivityTransformer());
+        return $this->userService->fetchActivity(Auth::id());
     }
 }

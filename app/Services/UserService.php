@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Comment;
 use App\Like;
 use App\Services\Contracts\CreateUserContract;
 use App\User;
@@ -21,7 +22,14 @@ class UserService {
     }
 
     public function fetchActivity($id) {
-        $like = Like::where('likedByUser_id', $id);
-        $comment = Comment::where('');
+        $user = User::whereId($id)->get();
+        $like = Like::where('likedByUser_id', $id)->orderBy('created_at', 'desc')->get();
+        $comment = Comment::where('commented_by_user_id', $id)->orderBy('created_at', 'desc')->get();
+
+        return [
+            'user'  =>   $user,
+            'comment' => $comment,
+            'like'    => $like
+        ];
     }
 }
