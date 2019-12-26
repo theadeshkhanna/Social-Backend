@@ -38,4 +38,6 @@ $api->version('v1', ['middleware' => ['jwt.auth']], function (\Dingo\Api\Routing
 
     $api->get('activity', $baseControllersPath . 'UserController@getActivity');
 
+    $api->post('image', $baseControllersPath . 'MediaController@upload');
+
 });
