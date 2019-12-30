@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b6fd8d0-82ba-4668-8baf-f49dd2db43c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Media.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Api/v1/Requests/UploadMediaRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Api/v1/Controllers/MediaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Api/v1/Controllers/MediaController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -135,6 +139,7 @@
   <component name="ProjectId" id="1U9eL5Jmxe7CAYk81k02rGoCYUH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../aep-laravel-backend" />
@@ -208,7 +213,7 @@
       <workItem from="1574773181327" duration="496000" />
       <workItem from="1575035143013" duration="12000" />
       <workItem from="1577349086601" duration="1564000" />
-      <workItem from="1577698614939" duration="285000" />
+      <workItem from="1577698614939" duration="2014000" />
     </task>
     <servers />
   </component>
